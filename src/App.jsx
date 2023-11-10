@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Spline from "./Spline";
 
 function App() {
   const [theme, setTheme] = useState(() => {
@@ -22,7 +23,8 @@ function App() {
   };
 
   return (
-    <div className="h-screen flex justify-center items-center dark:bg-neutral-900">
+    <div className="h-screen flex flex-col justify-center items-center dark:bg-neutral-900">
+      <Spline scene="https://prod.spline.design/6E149xdWR7X22Hx6/scene.splinecode"/>
       <button
         className="bg-slate-200 px-4 py-2 rounded hover:bg-slate-300 dark:bg-slate-950 dark:text-white dark:hover:bg-slate-900"
         onClick={handleChangeTheme}
